@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css">
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      input[type="text"] {
+        outline: 0;
+        border: 1px solid #ccc;
+        padding: 8px 12px;
+        margin: 0;
+      }
+      input[type="radio"], input[type="checkbox"] {
+        margin: 0 12px;
+      }
+      button {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        cursor: pointer;
+      }
+      button:hover {
+        background: #eee;
+      }
+      button:active {
+        background: #ccc;
+      }
+      .completed {
+        
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 640px;
+        max-width: 100%;
+        margin: auto;
+      }
+      .TodoFilter {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .TodoFilter__label {
+        flex-grow: 1
+      }
+      .TodoFilter__label--active {
+        font-weight: bold;
+      }
+      .TodoList {
+        list-style: none;
+        padding: 0;
+      }
+      .TodoItem {
+        display: flex;
+        align-items: center;
+        padding: 8px 0;
+        margin-bottom: 4px;
+        border-bottom: 1px solid #eee;
+      }
+      .TodoItem--completed .TodoItem__text{
+        text-decoration: line-through;
+        color: #777;
+      }
+      .TodoItem__text {
+        flex-grow: 1;
+      }
+      .TodoInput {
+        display: flex;
+      }
+      .TodoInput__input {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div id="root" class="container"></div>
+    </main>
+    <script type="text/javascript" src="/main.js"></script>
+  </body>
+</html>
